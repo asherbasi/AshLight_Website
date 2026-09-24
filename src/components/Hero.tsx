@@ -1,11 +1,20 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight, Play, Sparkles } from 'lucide-react';
 
 const QUICK_LINKS = [
-  { label: 'Services', to: '/services' },
+  { label: 'About', to: '/about' },
   { label: 'View Our Works', to: '/work' },
   { label: 'Learning Archive', to: '/learning-archive' },
-  { label: 'About', to: '/about' },
+  { label: 'Contact', to: '/contact' },
+];
+
+const VALUE_PROPS = [
+  { label: 'Social Media' },
+  { label: 'Content Creation' },
+  { label: 'Video Production' },
+  { label: 'Graphic Design' },
+  { label: 'Paid Ads' },
+  { label: 'AI & Automation' },
 ];
 
 export default function Hero() {
@@ -25,7 +34,7 @@ export default function Hero() {
         {/* Eyebrow label */}
         <div className="reveal mb-8 flex items-center gap-3">
           <span className="h-px w-8 bg-coral-500/40" />
-          <span className="label-tag">Social · Content · Video · Design</span>
+          <span className="label-tag">Creative Digital Agency</span>
           <span className="h-px w-8 bg-coral-500/40" />
         </div>
 
@@ -38,14 +47,29 @@ export default function Hero() {
 
         {/* Supporting paragraph */}
         <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-base leading-relaxed text-cream-300 md:text-lg">
-          AshLight helps ambitious brands turn ideas into content, build stronger
-          digital identities, and get seen by the people who matter.
+          AshLight is a digital and media agency helping brands show up better online.
+          We turn ideas into content, build stronger digital identities, and put your
+          brand in front of the people who matter — through social media, video, design,
+          and AI-powered creative.
         </p>
 
+        {/* Service tags */}
+        <div className="reveal reveal-delay-3 mt-7 flex flex-wrap items-center justify-center gap-2.5">
+          {VALUE_PROPS.map((vp) => (
+            <span
+              key={vp.label}
+              className="inline-flex items-center gap-1.5 rounded-full border border-cream-300/10 bg-cream-50/[0.03] px-3.5 py-1.5 text-xs font-medium text-cream-300"
+            >
+              <Sparkles className="h-3 w-3 text-coral-400" />
+              {vp.label}
+            </span>
+          ))}
+        </div>
+
         {/* CTAs */}
-        <div className="reveal reveal-delay-3 mt-10 flex flex-col items-center gap-4 sm:flex-row">
+        <div className="reveal reveal-delay-4 mt-10 flex flex-col items-center gap-4 sm:flex-row">
           <Link to="/contact" className="btn-primary group">
-            Book a call
+            Work With Us
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
           <Link to="/work" className="btn-ghost-dark group">
@@ -55,7 +79,7 @@ export default function Hero() {
         </div>
 
         {/* Quick-link pills */}
-        <div className="reveal reveal-delay-4 mt-10 flex flex-wrap items-center justify-center gap-2.5">
+        <div className="reveal reveal-delay-5 mt-8 flex flex-wrap items-center justify-center gap-2.5">
           {QUICK_LINKS.map((link) => (
             <Link
               key={link.to}

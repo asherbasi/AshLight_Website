@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
+import { Instagram, Mail, ArrowUpRight, Music2 } from 'lucide-react';
 import Logo from './Logo';
 
 const NAV_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
-  { label: 'Services', to: '/services' },
   { label: 'Work', to: '/work' },
   { label: 'Resources', to: '/learning-archive' },
   { label: 'Contact', to: '/contact' },
@@ -13,8 +12,7 @@ const NAV_LINKS = [
 
 const SOCIALS = [
   { label: 'Instagram', icon: Instagram, href: 'https://instagram.com/ashlight.agency' },
-  { label: 'LinkedIn', icon: Linkedin, href: '#' },
-  { label: 'TikTok', icon: ArrowUpRight, href: 'https://tiktok.com/@ashlight.agency' },
+  { label: 'TikTok', icon: Music2, href: 'https://tiktok.com/@ashlight.agency' },
 ];
 
 export default function Footer() {
@@ -50,11 +48,11 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <p className="label-tag">Get In Touch</p>
             <a
-              href="mailto:hello@ashlight.com"
+              href="mailto:asherdesigns3@gmail.com"
               className="group inline-flex w-fit items-center gap-2 text-base text-cream-100 transition-colors hover:text-coral-400"
             >
               <Mail className="h-4 w-4 text-coral-400" />
-              hello@ashlight.com
+              asherdesigns3@gmail.com
             </a>
 
             <div className="mt-4 flex gap-3">

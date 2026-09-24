@@ -13,7 +13,6 @@ export default function Logo({ className = '', showWordmark = true, variant = 'l
         src="/assets/images/image.png"
         alt="AshLight logo"
         className="h-9 w-9 object-contain transition-all duration-300 group-hover:scale-105"
-        style={{ mixBlendMode: 'multiply' }}
       />
       {showWordmark && (
         <span className={`font-display text-lg font-bold tracking-tight ${textColor}`}>

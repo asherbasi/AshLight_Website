@@ -1,4 +1,4 @@
-import { Share2, Film, PenTool, Sparkles, Cpu, Camera } from 'lucide-react';
+import { Share2, Film, PenTool, Sparkles, Cpu, Camera, Megaphone, Video, Bot } from 'lucide-react';
 
 export interface Service {
   icon: typeof Share2;
@@ -19,6 +19,24 @@ export const SERVICES: Service[] = [
     deliverables: ['Content calendars', 'Publishing & scheduling', 'Community engagement', 'Monthly performance reports'],
   },
   {
+    icon: Camera,
+    title: 'Content Creation',
+    shortDescription:
+      'Scroll-stopping visual content built to communicate your brand clearly and creatively.',
+    description:
+      'We produce original visual content — photography, creative direction, and formatted assets — that stops the scroll and communicates your message in seconds. Every piece is designed for the platform it lives on.',
+    deliverables: ['Creative direction', 'Visual content production', 'Platform-formatted assets', 'Content batches'],
+  },
+  {
+    icon: Video,
+    title: 'Video Production',
+    shortDescription:
+      'Professional videography that captures your brand in motion — from concept to final cut.',
+    description:
+      'From on-set filming to creative direction, we handle the full production process. Whether it is brand stories, product showcases, or behind-the-scenes content, we shoot footage that looks cinematic and communicates your message with confidence.',
+    deliverables: ['On-site videography', 'Brand story films', 'Product & event coverage', 'Creative direction'],
+  },
+  {
     icon: Film,
     title: 'Video Editing',
     shortDescription:
@@ -29,7 +47,7 @@ export const SERVICES: Service[] = [
   },
   {
     icon: PenTool,
-    title: 'Graphics Design',
+    title: 'Graphic Design',
     shortDescription:
       'Brand-aligned visual design for social, web, and print — built to look premium everywhere your brand shows up.',
     description:
@@ -37,13 +55,13 @@ export const SERVICES: Service[] = [
     deliverables: ['Social graphics & carousels', 'Brand kits & templates', 'Marketing collateral', 'Thumbnail & cover design'],
   },
   {
-    icon: Camera,
-    title: 'Content Creation',
+    icon: Megaphone,
+    title: 'Paid Advertising',
     shortDescription:
-      'Scroll-stopping visual content built to communicate your brand clearly and creatively.',
+      'Targeted ad campaigns that put your brand in front of the right people at the right time.',
     description:
-      'We produce original visual content — photography, creative direction, and formatted assets — that stops the scroll and communicates your message in seconds. Every piece is designed for the platform it lives on.',
-    deliverables: ['Creative direction', 'Visual content production', 'Platform-formatted assets', 'Content batches'],
+      'We design and manage paid ad campaigns across social platforms — from audience research and creative production to bid management and performance optimization. Every dollar is tracked, every campaign is measured, and every result feeds back into the next iteration.',
+    deliverables: ['Ad strategy & targeting', 'Creative production', 'Campaign management', 'Performance reporting'],
   },
   {
     icon: Sparkles,
@@ -55,13 +73,13 @@ export const SERVICES: Service[] = [
     deliverables: ['AI-generated visuals', 'Concept exploration', 'Creative variations', 'Rapid prototyping'],
   },
   {
-    icon: Cpu,
-    title: 'Digital & AI Solutions',
+    icon: Bot,
+    title: 'AI & Automation',
     shortDescription:
-      'Smart digital experiences and automation solutions that help businesses work better.',
+      'Smart automations and AI-powered workflows that help your business operate more efficiently.',
     description:
-      'Beyond content, we build digital solutions — automations, integrations, and AI-powered workflows — that help brands operate more efficiently. From chatbots to content pipelines, we use technology to solve real business problems.',
-    deliverables: ['Workflow automation', 'AI integrations', 'Digital tooling', 'Process optimization'],
+      'Beyond content, we build digital solutions — automations, integrations, and AI-powered workflows — that help brands operate more efficiently. From chatbots to content pipelines, we use technology to solve real business problems and free up your team to focus on what matters.',
+    deliverables: ['Workflow automation', 'AI integrations & chatbots', 'Content pipelines', 'Process optimization'],
   },
 ];
 
